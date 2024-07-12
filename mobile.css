@@ -1,0 +1,59 @@
+@media screen and (max-width: 36em) {
+body {
+    padding: 5.5rem 0rem;
+}
+
+.content-wrapper {
+    grid-template-rows: 1fr;
+}
+
+/* Width and height of img mobile, overlay and card */
+
+.header-mobile, .stats-content, .header-mobile::before {
+ width: 327px;
+}
+
+.header-mobile::before, .stats-content {
+    height: 540px;
+}
+
+/* Card styling */
+
+.header-mobile, .header-mobile::before {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.stats-content {
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 0px 0px 8px 8px;
+}
+
+/* Card content */
+
+.stats-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.stats-content > h1 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0rem 0rem;
+  max-width: 250px;
+}
+
+/* Stats styling */
+
+.unordered-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+
+}

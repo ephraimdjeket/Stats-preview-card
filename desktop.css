@@ -1,0 +1,12 @@
+@media screen and (min-width: 36em) {
+  /* Content */
+
+  .content-wrapper {
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .stats-content {
+    width: 570px;
+    height: 446px;
+  }
+}
