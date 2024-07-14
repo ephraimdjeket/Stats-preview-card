@@ -7,8 +7,8 @@
 
 /* Neutral Colors */
 --White: hsl(0, 0%, 100%); /* (main heading, stats) */
---Slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /* (main paragraph) */
---Slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /* (stat headings) */;
+--Slightly-transparent-white-one: hsla(0, 0%, 100%, 0.75); /* (main paragraph) */
+--Slightly-transparent-white-two: hsla(0, 0%, 100%, 0.6); /* (stat headings) */;
 
 /* Fonts */
 --Lexend-Deca: "Lexend Deca", sans-serif;
@@ -25,7 +25,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     background-color: var(--Very-dark-blue);
+}
+
+ul {
+    list-style: none;
 }
 
 img {
@@ -51,30 +56,63 @@ picture::before {
 }
 
 .content-wrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.stats-content {
+.content-wrapper {
     background-color: var(--Dark-desaturated-blue);
-    width: 570px;
 }
 
 /* Card content */
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 .stats-content {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 2.5rem;
+    align-items: center;
 }
 
-.stats-content > h1 {
-    color: var(--White);
-    font-weight: bold;
-    font-family: var(--Inter);
+.stats-content > h1, .stats-content > p, li, .unordered-list > p, .li-group > p {
+   font-family: var(--Inter); 
+   color: var(--White);
+} 
+
+.stats-content > p {
+    color: var(--Slightly-transparent-white-one);
 }
 
 .purple {
     color: var(--Soft-violet);
+}
+
+.stats-content > h1 {
+    font-weight: bold;
+}
+
+li {
+    color: var(--White);
+    font-weight: bold;
+}
+
+.unordered-list > p, .li-group > p, div {
+    font-family: var(--Inter);
+    color: var(--Slightly-transparent-white-two);
+}
+
+/* Stats styling */
+
+.unordered-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2px;
 }

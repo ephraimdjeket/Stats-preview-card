@@ -1,12 +1,59 @@
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 69.875em) {
+  body {
+    padding: 11.063rem 0rem;
+  }
+
   /* Content */
 
   .content-wrapper {
-    grid-template-rows: 1fr 1fr;
+    flex-direction: row-reverse;
+    border-radius: 8px 0px 0px 8px;
   }
+
+  .header-desktop,
+  .stats-content,
+  .header-desktop::before {
+    height: 446px;
+  }
+
+  .header-mobile {
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  
+  /* Card content */
   
   .stats-content {
     width: 570px;
-    height: 446px;
-  }
+}
+
+.stats-content > h1, .stats-content > p {
+    text-align: left;
+}
+
+.stats-content > h1 {
+    padding: 4.438rem 5.938rem 1.563rem 4.5rem;
+    font-size: 2.25rem;
+    line-height: 44px;
+}
+
+.stats-content > p {
+    text-align: left;
+    padding: 0rem 7.781rem 4.5rem  4.469rem;
+    line-height: 25px;
+    font-size: 0.938rem;
+}
+
+.unordered-list {
+    padding-right: 4.469rem;
+    text-align: left;
+    display: flex;
+    gap: 3.75rem;
+}
+
+.unordered-list > div > li {
+    font-size: 1.5rem;
+}
+
+
 }
