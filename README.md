@@ -51,7 +51,6 @@ This is my solution for the stats preview card challenge on Frontend Mentor.
 Your users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- See a hover state on the "Learn more" buttons on each card.
 
 ## Built with
 
